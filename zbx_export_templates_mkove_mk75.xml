@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2022-06-21T00:26:09Z</date>
+    <date>2022-06-21T00:37:55Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -12,12 +12,13 @@
             <template>Template-MKOVE-MK75-12V-Battery-Monitor</template>
             <name>Template-MKOVE-MK75-12V-Battery-Monitor</name>
             <description>https://www.mkove.com/mk75-battery-monitor/&#13;
+https://github.com/jonopryor/mkove-mk75-zabbix-template&#13;
 &#13;
 Connect the MK75 to your WiFi network.&#13;
 &#13;
-Change the template macros to match your battery specifications.&#13;
+Change the template macros or set host macros to match your battery specifications.&#13;
 &#13;
-Update the MK75HOSTNAME variable with the IP Address / Hostname of your MK75.&#13;
+Update the MK75HOSTNAME template macro or set host macro with the IP Address / Hostname of your MK75.&#13;
 &#13;
 This template uses the HTTP Agent.</description>
             <groups>
