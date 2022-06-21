@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2022-06-21T00:46:33Z</date>
+    <date>2022-06-21T00:48:28Z</date>
     <groups>
         <group>
             <name>Templates</name>
+        </group>
+        <group>
+            <name>Templates/Modules</name>
         </group>
     </groups>
     <templates>
@@ -24,6 +27,9 @@ This template uses the HTTP Agent.</description>
             <groups>
                 <group>
                     <name>Templates</name>
+                </group>
+                <group>
+                    <name>Templates/Modules</name>
                 </group>
             </groups>
             <applications/>
