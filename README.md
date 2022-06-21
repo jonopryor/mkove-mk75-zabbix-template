@@ -1,6 +1,20 @@
 # mkove-mk75-zabbix-template
 Zabbix 4.0 HTTP Agent Template for mkove MK75 12V Battery Monitor
 
+## Instructions
+
+https://www.mkove.com/mk75-battery-monitor/
+
+https://github.com/jonopryor/mkove-mk75-zabbix-template
+
+Connect the MK75 to your WiFi network.
+
+Change the template macros or set host macros to match your battery specifications.
+
+Update the MK75HOSTNAME template macro or set host macro with the IP Address / Hostname of your MK75.
+
+This template uses the HTTP Agent.
+
 ## Items
 - Volts
 - Amps
