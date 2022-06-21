@@ -36,6 +36,11 @@ This template uses the HTTP Agent.
 - Using more power than generated over previous 12 hours.
 - Using more power than generated over previous 24 hours.
 
+## Graphs
+- Volts / Amps
+- SOC
+- Watts
+
 ## TODO
 - Upgrade Template to Zabbix 6.0LTS
 - Develop predictive forecasting triggers
