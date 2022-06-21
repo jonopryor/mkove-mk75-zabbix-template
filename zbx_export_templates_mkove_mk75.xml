@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2022-06-21T00:37:55Z</date>
+    <date>2022-06-21T00:46:33Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template-MKOVE-MK75-12V-Battery-Monitor</template>
-            <name>Template-MKOVE-MK75-12V-Battery-Monitor</name>
+            <template>mkove MK75 Battery Monitor by HTTP</template>
+            <name>mkove MK75 Battery Monitor by HTTP</name>
             <description>https://www.mkove.com/mk75-battery-monitor/&#13;
 https://github.com/jonopryor/mkove-mk75-zabbix-template&#13;
 &#13;
@@ -295,7 +295,7 @@ This template uses the HTTP Agent.</description>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.soc.float.last()}&gt;=99.90</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.soc.float.last()}&gt;=99.90</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>BATTERY IS FULLY CHARGED</name>
@@ -311,7 +311,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.soc.float.last()}&lt;=99.89</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.soc.float.last()}&lt;=99.89</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>BATTERY IS NOT FULLY CHARGED</name>
@@ -327,7 +327,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.amps.last()}&gt;{$MAXCHARGEAMPS}</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.amps.last()}&gt;{$MAXCHARGEAMPS}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Charge rate is exceeding {$MAXCHARGEAMPS} amps</name>
@@ -343,7 +343,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.amps.last()}&lt;{$MAXDISCHARGEAMPS}</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.amps.last()}&lt;{$MAXDISCHARGEAMPS}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Discharge rate is exceeding {$MAXDISCHARGEAMPS} amps</name>
@@ -359,7 +359,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.volts.last()}&gt;={$MAXVOLTS}</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.volts.last()}&gt;={$MAXVOLTS}</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Over Voltage</name>
@@ -375,7 +375,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.soc.float.last()}&lt;15</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.soc.float.last()}&lt;15</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>SOC is less than 15%</name>
@@ -391,7 +391,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.soc.float.last()}&lt;25</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.soc.float.last()}&lt;25</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>SOC is less than 25%</name>
@@ -407,7 +407,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.soc.float.last()}&lt;50</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.soc.float.last()}&lt;50</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>SOC is less than 50%</name>
@@ -423,7 +423,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.soc.float.last()}&lt;75</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.soc.float.last()}&lt;75</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>SOC is less than 75%</name>
@@ -439,7 +439,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.amps.avg(2h)}&lt;-2</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.amps.avg(2h)}&lt;-2</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Using more power than generated over previous 2 hours.</name>
@@ -455,7 +455,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.amps.avg(168h)}&lt;-2</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.amps.avg(168h)}&lt;-2</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Using more power than generated over previous 7 days.</name>
@@ -471,7 +471,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.amps.avg(12h)}&lt;-2</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.amps.avg(12h)}&lt;-2</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Using more power than generated over previous 12 hours.</name>
@@ -487,7 +487,7 @@ This template uses the HTTP Agent.</description>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template-MKOVE-MK75-12V-Battery-Monitor:mk75.amps.avg(24h)}&lt;-2</expression>
+            <expression>{mkove MK75 Battery Monitor by HTTP:mk75.amps.avg(24h)}&lt;-2</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Using more power than generated over previous 24 hours.</name>
@@ -530,7 +530,7 @@ This template uses the HTTP Agent.</description>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template-MKOVE-MK75-12V-Battery-Monitor</host>
+                        <host>mkove MK75 Battery Monitor by HTTP</host>
                         <key>mk75.soc.float</key>
                     </item>
                 </graph_item>
@@ -562,7 +562,7 @@ This template uses the HTTP Agent.</description>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template-MKOVE-MK75-12V-Battery-Monitor</host>
+                        <host>mkove MK75 Battery Monitor by HTTP</host>
                         <key>mk75.volts</key>
                     </item>
                 </graph_item>
@@ -574,7 +574,7 @@ This template uses the HTTP Agent.</description>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template-MKOVE-MK75-12V-Battery-Monitor</host>
+                        <host>mkove MK75 Battery Monitor by HTTP</host>
                         <key>mk75.amps</key>
                     </item>
                 </graph_item>
@@ -606,7 +606,7 @@ This template uses the HTTP Agent.</description>
                     <calc_fnc>4</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Template-MKOVE-MK75-12V-Battery-Monitor</host>
+                        <host>mkove MK75 Battery Monitor by HTTP</host>
                         <key>mk75.watts</key>
                     </item>
                 </graph_item>
